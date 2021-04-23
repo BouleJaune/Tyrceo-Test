@@ -20,7 +20,7 @@ For this reason the requirements.txt doesn't contains geopandas and it's depende
 As for the geocoding, there are different APIs but most of the free ones aren't that good. And the free number of requests per day for the good ones is not enough.
 
 I ended up using mapbox geocoding API because I had a token and because I thought that it was what you were using. However it doesn't always yield such good results. 
-For example some adresses are like this "multiple appartments in Madrid, example [random postal code]>". In this case it will gives us what seem to be random coordinates, whereas the Google geocoding API will at least gives us coordinates following the postal code.
+For example some adresses are like this "multiple appartments in Madrid, example [random postal code]>". In this case it will give us what seem to be random coordinates, whereas the Google geocoding API will at least give us coordinates following the postal code.
 For this reason I didn't bother cleaning those outliers since the data in itself is fine and it should be fine with just the right geocoding API, I simply don't have access to a good one. This is why there will be some hotels at random places.
 
 As for the visualisation I am far from being a front-end developper so I used Dash and tried to do something good enough for a test.I hope it will be alright. 
