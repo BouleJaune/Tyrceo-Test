@@ -1,5 +1,6 @@
 I had to install with pipwin geopandas and it's dependencies because "Fiona" was apparently unable to install GDAL on my system ... anyway that's what I used :
-``pip install wheel
+```
+pip install wheel
 pip install pipwin
 
 pipwin install numpy
@@ -10,8 +11,8 @@ pipwin install fiona
 pipwin install pyproj
 pipwin install six
 pipwin install rtree
-pipwin install geopandas``
-
+pipwin install geopandas
+```
 For this reason the requirements.txt doesn't contains geopandas and it's dependencies. So either a simple "pip install geopandas" will work for you, or you'll have to do something like I did.
 
 
